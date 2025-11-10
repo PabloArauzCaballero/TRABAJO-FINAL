@@ -435,17 +435,14 @@
         overflow: hidden;  
     }
 
-    .about_us-img_container > *, 
     .about_us-img_container > div > *, 
     .our_philosophy-image > *,
-    .about_us-img_container > div > *,
     .we_fund-img_container > *,
     .we_fund-img_container > div > *,
     .we_help-img_container > *,
     .we_help-img_container > div > *, 
     .we_seed-img_container > *,
     .we_seed-img_container > div > *,
-    .what_is_a_campaign-img_container > *,
     .what_is_a_campaign-img_container > div > *{
         max-width: 100%;
         height: auto;
