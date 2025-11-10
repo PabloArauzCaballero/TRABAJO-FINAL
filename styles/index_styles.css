@@ -141,17 +141,17 @@
         font-size: 20px;
     }
 
-        .general_header > div > ul{
+    .general_header > div > ul{
         padding-bottom: 2rem; padding-top: 2rem;
-    }
-    
+    }    
 
-    .general_header > div > ul, .general_header > div > div > p{
+    .general_header > div > ul, .general_header > div > div > p, .general_header > div > p{
         background-color: rgb(55, 55, 55);
     }
 
-    .general_header > div > div > p{
+    .general_header > div > div > p, .general_header > div > p{
         padding: 1rem;
+        border-radius: 15px;
     }
 
     .general_header > div > h3, .general_header > div > div > h3{
@@ -398,12 +398,13 @@
     }
     
 
-    .general_header > div > ul, .general_header > div > div > p{
+    .general_header > div > ul, .general_header > div > div > p, .general_header > div > p{
         background-color: rgb(55, 55, 55);
     }
 
-    .general_header > div > div > p{
+    .general_header > div > div > p, .general_header > div > p{
         padding: 1rem;
+        border-radius: 15px;
     }
 
     .general_header > div > h3, .general_header > div > div > h3{
@@ -413,7 +414,7 @@
         background-color: rgb(96, 96, 96);
     }
     
-    .about_us-img_container, .we_fund-img_container, .we_help-img_container, .we_seed-img_container{
+    .about_us-img_container, .we_fund-img_container, .we_help-img_container, .we_seed-img_container, .what_is_a_campaign-img_container{
         position: relative;           
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -443,11 +444,14 @@
     .we_help-img_container > *,
     .we_help-img_container > div > *, 
     .we_seed-img_container > *,
-    .we_seed-img_container > div > *{
+    .we_seed-img_container > div > *,
+    .what_is_a_campaign-img_container > *,
+    .what_is_a_campaign-img_container > div > *{
         max-width: 100%;
         height: auto;
         place-self: center center;
         z-index: 999999;
+        border-radius: 15px;
     }
     
     .our_services-title {
@@ -472,4 +476,39 @@
         gap: 1rem;
         margin-bottom: 1rem;
     }
+}
+
+
+@media (max-width: 1000px){
+    .about_us-img_container, .we_fund-img_container, .we_help-img_container, .we_seed-img_container{
+        position: relative;
+        margin: 0; 
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap:0;
+        overflow: hidden;
+    }
+
+    .about_us-img_container > *, 
+    .about_us-img_container > div > *, 
+    .our_philosophy-image > *,
+    .about_us-img_container > div > *,
+    .we_fund-img_container > *,
+    .we_fund-img_container > div > *,
+    .we_help-img_container > *,
+    .we_help-img_container > div > *, 
+    .we_seed-img_container > *,
+    .we_seed-img_container > div > *,
+    .what_is_a_campaign-img_container > *,
+    .what_is_a_campaign-img_container > div > *{
+        max-width: 100%;
+        margin-top: 1rem; padding: 0;
+        align-items: center;
+        z-index: 999;
+        border-radius: 15px;
+    }
+
 }
