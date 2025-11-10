@@ -354,7 +354,7 @@
         border-radius: 15px;
     }
 
-    .about_us-img_container{
+    .about_us-img_container, .what_is_a_campaign{
         position: relative;           
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -390,7 +390,8 @@
     .we_seed-img_container > *,
     .boost_my_project-img_container > *,
     .fund_my_launch-img_container > *,
-    .we_build-img_container > *
+    .we_build-img_container > *,
+    .what_is_a_campaign > div > *
     {
         max-width: 100%;
         border-radius: 15px;
